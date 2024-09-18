@@ -1,0 +1,6 @@
+config.json
+*.backup
+*.vscode
+*.test
+*.DS_Store
+__pycache__/

@@ -1,0 +1,41 @@
+{
+    "backup_profiles": [
+        {
+            "id": "filesystem_backup_1",
+            "active": true,
+
+            "source": [
+                "**/sample/backup-this-dir_1/",
+                "**/sample/backup-this-dir_2/",
+                "**/sample/backup-this-file.txt"
+            ],
+            
+            "ignore": [
+                ".*",
+                "**/not-this-dir/",
+                "temp*"
+
+            ]
+        },
+        {
+            "id": "filesystem_backup_2",
+            "active": true,
+
+            "source": [
+                "**/sample/backup-all-pas-files/*.pas"
+            ],
+            
+            "ignore": [
+            ]
+        }
+    ],
+
+    "backup_destinations": [
+        {
+            "id": "my_backup_vault",
+            "active": true,
+            "days_to_keep": 42,
+            "directory": "/save-the-backups-here/"
+        }
+    ]
+}
